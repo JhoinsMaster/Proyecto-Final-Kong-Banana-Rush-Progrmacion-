@@ -1,0 +1,42 @@
+int xFondo = 0;
+int VxFondo = 2;
+float xKong = 200;
+float yKong = 350;
+PImage imgFondo;
+PImage barril;
+PImage imgKong;
+PImage df;
+PImage banana;
+int monoX = 100;
+int monoY = 350;
+float monoVelY = 0;
+float monoVelX = 3;
+float gravedad = 0.6;
+boolean enElAire = false;
+int vidas = 3;
+PImage gameover;
+PImage kongCamina1;
+PImage kongCamina2;
+PImage kongSalta;
+boolean camina1 = true;
+int tiempo = 0;
+char juegoEstado = 'i';
+int bananaX = 700;
+int score = 0;
+int barrilX = 700;
+
+void setup() {
+  size(1000, 500);
+  textAlign(CENTER, CENTER);
+  df = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/df.jpg");
+  imgFondo = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/esce1.png");
+  imgKong = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/mono.png");
+  banana = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/banana.png");
+  barril = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/barril.png");
+  gameover = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/gameover.jpg");
+  kongCamina1 = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/per1.png");
+  kongCamina2 = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/per2.png");
+  kongSalta = loadImage("C:/Users/Acer/Desktop/KONG BANANA RUSH/imagenes/kong.png");
+  camina1 = true;
+  tiempo = 0;
+}
